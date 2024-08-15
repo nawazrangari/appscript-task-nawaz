@@ -19,15 +19,15 @@ import "./App.css";
 function App() {
   const products = [
     
-    { img: bag, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: pars5, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: bag1, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: poco2, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: pars, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: cap, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: belt, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: pars2, title: "PPXOC Milkyway Dress in Pressed Flowers" },
-    { img: pars4, title: "PPXOC Milkyway Dress in Pressed Flowers" },
+    { img: bag, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: pars5, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: true},
+    { img: bag1, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: poco2, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: pars, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: cap, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: belt, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: pars2, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+    { img: pars4, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
   ];
 
   return (
@@ -37,7 +37,7 @@ function App() {
         <Sidebar />
         <div className="product-grid">
           {products.map((product, index) => (
-            <ProductCard key={index} img={product.img} title={product.title} />
+            <ProductCard key={index} img={product.img} title={product.title} isLike={product.isLike} />
           ))}
         </div>
       </main>
