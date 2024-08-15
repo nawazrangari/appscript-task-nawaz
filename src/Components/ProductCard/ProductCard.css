@@ -1,0 +1,51 @@
+.card-wrapper {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .new-product {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .product {
+    position: relative;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product-info {
+    margin-top: 10px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .product-heart {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: -6px;
+    right: -8px;
+    cursor: pointer;
+  }
+  
