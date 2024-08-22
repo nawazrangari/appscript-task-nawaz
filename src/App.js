@@ -18,27 +18,33 @@ import "./App.css";
 
 function App() {
   const products = [
-    
-    { img: bag, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: pars5, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: true},
-    { img: bag1, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: poco2, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: pars, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: cap, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: belt, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: pars2, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
-    { img: pars4, title: "PPXOC Milkyway Dress in Pressed Flowers" , isLike: false},
+
+    { img: bag, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: pars5, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: true },
+    { img: bag1, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: poco2, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: pars, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: cap, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: belt, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
+    { img: pars2, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: true },
+    { img: pars4, title: "PPXOC Milkyway Dress in Pressed Flowers", isLike: false },
   ];
 
   return (
     <div>
       <Header />
       <main>
-        <Sidebar />
-        <div className="product-grid">
-          {products.map((product, index) => (
-            <ProductCard key={index} img={product.img} title={product.title} isLike={product.isLike} />
-          ))}
+        <div className="tagline">
+          <h1>Discover Our Products</h1>
+          <p className="text">Lorem ipsum dolor amet consecteture. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
+        </div>
+        <div className="main">
+          <Sidebar />
+          <div className="product-grid">
+            {products.map((product, index) => (
+              <ProductCard key={index} img={product.img} title={product.title} isLike={product.isLike} />
+            ))}
+          </div>
         </div>
       </main>
       <Footer />

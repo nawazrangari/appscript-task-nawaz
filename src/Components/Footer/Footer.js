@@ -1,7 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import insta from "../../images/Insta.png";
-import linkdin from "../../images/mdi_linkedin.png";
 // import './Header.css';
 
 function Footer() {
@@ -20,19 +18,27 @@ function Footer() {
 
           <div className="column column-2">
             <h3 className="title">CONTACT US</h3>
-            <a href="#" className="link">
+            <a className="link">
               +44 221 133 5360
             </a>
-            <a href="#" className="link">
+            <a className="link">
               customercare@mettamuse.com
             </a>
-            <a href="#" className="link">
+            <h3 className="title">
               Currency
-            </a>
-            <a href="#" className="link">
-              USD
-            </a>
-            <a href="#" className="link">
+            </h3>
+            <div className="currency">
+              <img
+                style={{
+                  height: '30px',
+                  width: '30px',
+                  borderRadius: '50%',
+                  objectFit: 'contain',
+                }}
+                src="https://media.istockphoto.com/id/955320026/vector/united-states-flag-icon.jpg?s=612x612&w=0&k=20&c=H_7queZAVZk-Qp30pAbM-bfh64aO4bXBEC6ws_l6wNI=" alt="US" />
+              <h4> + USD</h4>
+            </div>
+            <a className="link">
               Transactions will be completed in Euros and a currency reference
               is available on hover.
             </a>
@@ -109,9 +115,9 @@ function Footer() {
               >
                 <div
                   style={{ width: "100%", height: "100%", marginTop: "8px" }}
-                  class="instagram"
+                  className="instagram"
                 >
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </div>
               </div>
 
@@ -128,47 +134,86 @@ function Footer() {
               >
                 <div
                   style={{ width: "100%", height: "100%", marginTop: "8px" }}
-                  class="linkdin"
+                  className="linkdin"
                 >
-                  <i class="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                 </div>
               </div>
-              <div style={{ marginTop: "60px", marginLeft:"-85px" }}>
-                <span>mettā muse ACCEPTS</span>
-                <div style={{ display: "flex", gap: "10px", marginTop: "15px" }}>
+              <div style={{ marginTop: "60px", marginLeft: "-85px" }}>
+                <h3>mettā muse ACCEPTS</h3>
+                <div className="flex-set" style={{ display: "flex", gap: "10px", marginTop: "15px" }}>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg"
                     alt="Google Pay"
-                    style={{ width: "40px", height: "40px" }}
+                    style={{
+                      background: '#ffffff',
+                      width: '40px',
+                      height: '20px',
+                      padding: '9px',
+                      border: '1px solid #ffffff',
+                      borderRadius: '5px',
+                      objectFit: 'contain'
+                    }}
                   />
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg"
                     alt="MasterCard"
-                    style={{ width: "40px", height: "40px" }}
+                    style={{
+                      background: '#ffffff',
+                      width: '40px',
+                      height: '20px',
+                      padding: '9px',
+                      border: '1px solid #ffffff',
+                      borderRadius: '5px',
+                      objectFit: 'contain'
+                    }}
                   />
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
                     alt="PayPal"
-                    style={{ width: "40px", height: "40px" }}
+                    style={{
+                      background: '#ffffff',
+                      width: '40px',
+                      height: '20px',
+                      padding: '9px',
+                      border: '1px solid #ffffff',
+                      borderRadius: '5px',
+                      objectFit: 'contain'
+                    }}
                   />
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
                     alt="Amex"
-                    style={{ width: "40px", height: "40px" }}
+                    style={{
+                      background: '#ffffff',
+                      width: '40px',
+                      height: '20px',
+                      padding: '9px',
+                      border: '1px solid #ffffff',
+                      borderRadius: '5px',
+                      objectFit: 'contain'
+                    }}
                   />
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg"
                     alt="Apple Pay"
                     style={{
-                      width: "40px",
-                      height: "40px",
-                      backgroundColor: "white",
+                      background: '#ffffff',
+                      width: '40px',
+                      height: '20px',
+                      padding: '9px',
+                      border: '1px solid #ffffff',
+                      borderRadius: '5px',
+                      objectFit: 'contain'
                     }}
                   />
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="footer-bottom">
+          <p>Copyright © 2023 mettamuse. All rights reserved.</p>
         </div>
       </div>
     </footer>

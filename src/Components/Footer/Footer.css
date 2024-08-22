@@ -166,21 +166,22 @@
   }
   
   .subscribe-form input {
-    padding: 10px;
+    padding: 15px;
     border: none;
-    flex: 1;
+    flex: 1 1;
     width: 384px;
     margin-right: 10px;
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
   }
   
   .subscribe-form button {
     padding: 10px 20px;
-    border: none;
-    background-color: #555;
-    color: #fff;
+    background-color: transparent;
+    color: #646262;
     cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #646262;
   }
   
   .subscribe-form input::placeholder {
@@ -253,6 +254,7 @@
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
+    text-transform: uppercase;
   }
   
   .description {
@@ -320,4 +322,12 @@
   
   .subscribe-form input::placeholder {
     color: #ccc;
+  }
+
+  .currency{
+    display: flex;
+    align-items: center;
+  }
+  .currency img{
+    margin-right: 5px;
   }

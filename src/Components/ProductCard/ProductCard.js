@@ -14,7 +14,7 @@ function ProductCard({ img, title, isLike }) {
           <h3 className="product-title">{title}</h3>
           <p className="product-price">Sign in or Create an account to see pricing</p>
         </div>
-        <img src={isLike? heartlike :heart} alt="Heart icon" className="product-heart" />
+        <img src={isLike ? heartlike : heart} alt="Heart icon" className="product-heart" />
       </div>
     </div>
   );
